@@ -1,0 +1,46 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 64,
+  "boxShadow": "none",
+  "buttonColor": "#312e81",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "displayName": "Button",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.cca02633.svg",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jyt39eirxo",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 51,
+  "onClick": "{{addAssignment.run(() => employee_assignments.run(() => closeModal(\"Modal2\"),()=>{}), () =>{})}}",
+  "parentId": "dsw6kbn9on",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "text": "Assign",
+  "topRow": 59,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "k59o7llgap",
+  "widgetName": "Button5"
+}

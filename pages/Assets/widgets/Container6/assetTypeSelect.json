@@ -1,0 +1,49 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 6,
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  "defaultOptionValue": "",
+  "displayName": "Select",
+  "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.bd99caba.svg",
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "5n72y11j2z",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 21,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 10.44921875,
+  "parentId": "mtfxvhlgmz",
+  "parentRowSpace": 10,
+  "placeholderText": "Asset Type",
+  "renderMode": "CANVAS",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "[{\"label\":{{FilterType.data[0].type}},\n\"value\":{{FilterType.data[0].type}}},\n{\"label\":{{FilterType.data[1].type}},\n\"value\":{{FilterType.data[1].type}}},\n{\"label\":{{FilterType.data[2].type}},\n\"value\":{{FilterType.data[2].type}}},\n{\"label\":{{FilterType.data[3].type}},\n\"value\":{{FilterType.data[3].type}}},\n{\"label\":{{FilterType.data[4].type}},\n\"value\":{{FilterType.data[4].type}}}]",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "mtkuzstj3x",
+  "widgetName": "assetTypeSelect"
+}

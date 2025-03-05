@@ -1,0 +1,1 @@
+select department as x, count (*) as y from asset_user where status='active'  group by department 

@@ -1,0 +1,83 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 14,
+  "boxShadow": "none",
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b52.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "i5hlgg4v10",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 43,
+  "logBlackList": {
+    "animateLoading": true,
+    "bottomRow": true,
+    "displayName": true,
+    "dynamicBindingPathList": true,
+    "dynamicTriggerPathList": true,
+    "fontSize": true,
+    "fontStyle": true,
+    "hideCard": true,
+    "iconSVG": true,
+    "isCanvas": true,
+    "isLoading": true,
+    "isVisible": true,
+    "key": true,
+    "leftColumn": true,
+    "minHeight": true,
+    "overflow": true,
+    "parentColumnSpace": true,
+    "parentId": true,
+    "parentRowSpace": true,
+    "renderMode": true,
+    "rightColumn": true,
+    "shouldTruncate": true,
+    "text": true,
+    "textAlign": true,
+    "textColor": true,
+    "textStyle": true,
+    "topRow": true,
+    "truncateButtonColor": true,
+    "type": true,
+    "version": true,
+    "widgetId": true,
+    "widgetName": true
+  },
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentId": "9eujxcfk3v",
+  "renderMode": "CANVAS",
+  "rightColumn": 58,
+  "shouldTruncate": false,
+  "text": "{{currentItem.date_returned === null ? \"No\" : currentItem.date_returned}}",
+  "textAlign": "LEFT",
+  "textColor": "{{currentItem.date_returned === \"\" ? \"#dc2626\" : \"#231F20\"}}",
+  "textStyle": "BODY",
+  "topRow": 10,
+  "truncateButtonColor": "#FFC13D",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "3vvyf6ehky",
+  "widgetName": "Text7CopyCopyCopy1"
+}

@@ -31,7 +31,7 @@
   "mobileLeftColumn": 57,
   "mobileRightColumn": 61,
   "mobileTopRow": 2,
-  "onClick": "{{utils.setActiveEditProduct(lst_products.triggeredItem);\nshowModal('mdl_manageProduct');}}",
+  "onClick": "{{showModal('mdl_manageProduct').then(() => {\n  showAlert('Dct gjkexbkjxm!', 'success');\n});}}",
   "parentColumnSpace": 11.77681589126587,
   "parentId": "x0uuw6s20l",
   "parentRowSpace": 10,

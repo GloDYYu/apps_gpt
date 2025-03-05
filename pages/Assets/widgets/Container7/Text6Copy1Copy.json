@@ -1,0 +1,46 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "fontFamily"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1.25rem",
+  "fontStyle": "",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b52.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "vp49hgu2wy",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 15,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 7.1171875,
+  "parentId": "6f7ahz0iy3",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 60,
+  "shouldTruncate": false,
+  "text": "<strong>{{assetDetailsForm.sourceData.make  ? assetDetailsForm.sourceData.make : assetList.listData[0].make}} / {{assetDetailsForm.sourceData.model  ? assetDetailsForm.sourceData.model : assetList.listData[0].model}}</strong>",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 8,
+  "truncateButtonColor": "#FFC13D",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "desvjtwm9x",
+  "widgetName": "Text6Copy1Copy"
+}
