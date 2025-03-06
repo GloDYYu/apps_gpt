@@ -1,0 +1,6 @@
+UPDATE maintenance_car
+SET 
+last_service_date ={{DatePicker.formattedDate}},
+last_service_notes={{Input1.text}},
+next_service_due={{DatePicker3Copy.formattedDate}}
+WHERE vin = {{register_vin.text}};

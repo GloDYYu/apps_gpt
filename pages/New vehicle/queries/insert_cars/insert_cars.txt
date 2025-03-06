@@ -1,0 +1,10 @@
+insert into maintenance_car (vin,make,model,year,interval,last_service_date,last_service_notes,next_service_due)
+values(
+{{vin.text}},
+{{make.text}},
+{{model.text}},
+{{year.text}},
+{{interval.text}},
+{{last_service.formattedDate}},
+{{notes.text}},
+{{next_service.formattedDate}});

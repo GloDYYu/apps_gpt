@@ -1,0 +1,81 @@
+{
+  "animateLoading": true,
+  "borderRadius": "0px",
+  "bottomRow": 48,
+  "boxShadow": "none",
+  "displayName": "Text",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    },
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "textColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "System Default",
+  "fontSize": "0.875rem",
+  "fontStyle": "",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.97c59b52.svg",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "sf3h3c9rxg",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 32,
+  "logBlackList": {
+    "animateLoading": true,
+    "bottomRow": true,
+    "displayName": true,
+    "fontSize": true,
+    "fontStyle": true,
+    "hideCard": true,
+    "iconSVG": true,
+    "isCanvas": true,
+    "isLoading": true,
+    "isVisible": true,
+    "key": true,
+    "leftColumn": true,
+    "minHeight": true,
+    "overflow": true,
+    "parentColumnSpace": true,
+    "parentId": true,
+    "parentRowSpace": true,
+    "renderMode": true,
+    "rightColumn": true,
+    "shouldTruncate": true,
+    "text": true,
+    "textAlign": true,
+    "textColor": true,
+    "topRow": true,
+    "truncateButtonColor": true,
+    "type": true,
+    "version": true,
+    "widgetId": true,
+    "widgetName": true
+  },
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "overflow": "NONE",
+  "parentColumnSpace": 5.6962890625,
+  "parentId": "fz89s8b2nw",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 61,
+  "shouldTruncate": false,
+  "text": "{{JSObject1.service_due()}}",
+  "textAlign": "LEFT",
+  "textColor": "{{ Text1Copy1.text === \"No\" ? \"#15803d\": \"#dc2626\" }}",
+  "topRow": 44,
+  "truncateButtonColor": "#FFC13D",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "zavmg6rdk2",
+  "widgetName": "Text1Copy1"
+}

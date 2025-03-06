@@ -7,12 +7,12 @@
     "navigationSetting": {
       "colorStyle": "theme",
       "logoAssetId": "",
-      "logoConfiguration": "logoAndApplicationTitle",
+      "logoConfiguration": "logoOnly",
       "navStyle": "sidebar",
       "orientation": "side",
       "position": "static",
       "showNavbar": true,
-      "showSignIn": true
+      "showSignIn": false
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
@@ -24,8 +24,36 @@
   "collapseInvisibleWidgets": true,
   "color": "#C2DAF0",
   "evaluationVersion": 2,
-  "icon": "globe",
+  "icon": "server",
   "pages": [
+    {
+      "id": "Schedule",
+      "isDefault": false
+    },
+    {
+      "id": "New vehicle",
+      "isDefault": false
+    },
+    {
+      "id": "Home page",
+      "isDefault": false
+    },
+    {
+      "id": "Dashboard3",
+      "isDefault": false
+    },
+    {
+      "id": "Assets2",
+      "isDefault": true
+    },
+    {
+      "id": "Home",
+      "isDefault": false
+    },
+    {
+      "id": "Employees2",
+      "isDefault": false
+    },
     {
       "id": "Dashboard2",
       "isDefault": false
@@ -41,10 +69,6 @@
     {
       "id": "Dashboard",
       "isDefault": false
-    },
-    {
-      "id": "Home",
-      "isDefault": true
     }
   ],
   "unpublishedAppLayout": {
@@ -54,12 +78,12 @@
     "navigationSetting": {
       "colorStyle": "theme",
       "logoAssetId": "",
-      "logoConfiguration": "logoAndApplicationTitle",
+      "logoConfiguration": "logoOnly",
       "navStyle": "sidebar",
       "orientation": "side",
       "position": "static",
       "showNavbar": true,
-      "showSignIn": true
+      "showSignIn": false
     },
     "themeSetting": {
       "appMaxWidth": "LARGE",
