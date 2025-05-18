@@ -25,9 +25,9 @@ class TypeWagonIndexPage extends IndexPage
     protected function fields(): iterable
     {
         return [
-            ID::make()->sortable(),
-            Text::make('Сокр.название','short_name')->sortable(),
-            Text::make('Полное название','full_name'),
+            //ID::make(),
+            Text::make('Сокр.название','short_name')->sortable()->updateOnPreview(),
+            Text::make('Полное название','full_name')->updateOnPreview(),
             Image::make('Изображение','image'),
             ];
     }

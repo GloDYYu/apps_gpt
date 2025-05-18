@@ -9,20 +9,26 @@ use App\Models\TypeWagon;
 use App\MoonShine\Pages\TypeWagon\TypeWagonIndexPage;
 use App\MoonShine\Pages\TypeWagon\TypeWagonFormPage;
 use App\MoonShine\Pages\TypeWagon\TypeWagonDetailPage;
-
+use MoonShine\ImportExport\Contracts\HasImportExportContract;
+use MoonShine\ImportExport\Traits\ImportExportConcern;
+use MoonShine\Laravel\Enums\Action;
 use MoonShine\Laravel\Resources\ModelResource;
 use MoonShine\Laravel\Pages\Page;
+use MoonShine\Support\ListOf;
+use MoonShine\UI\Fields\{ID, Text};
 
 /**
  * @extends ModelResource<TypeWagon, TypeWagonIndexPage, TypeWagonFormPage, TypeWagonDetailPage>
  */
-class TypeWagonResource extends ModelResource
+class TypeWagonResource extends ModelResource implements HasImportExportContract
 {
+    use ImportExportConcern;
+
     protected string $model = TypeWagon::class;
 
     protected string $title = 'Типы вагонов';
-
     protected ?string $alias = 'type-wagons';
+    protected bool $columnSelection = true;
 
     /**
      * @return list<Page>
@@ -45,6 +51,39 @@ class TypeWagonResource extends ModelResource
     protected function rules(mixed $item): array
     {
         return [];
+    }
+
+    protected function search(): array
+    {
+        return [
+            'id',
+            'short_name',
+            'full_name',
+        ];
+    }
+
+    protected function exportFields(): iterable
+    {
+        return [
+            ID::make('№ п/п', 'id'),
+            Text::make('Сокр.назв', 'short_name'),
+            Text::make('Полное название', 'full_name'),
+        ];
+    }
+
+    protected function importFields(): iterable
+    {
+        return [
+            ID::make('№ п/п', 'id'),
+            Text::make('Сокр.назв', 'short_name'),
+            Text::make('Полное название', 'full_name'),
+        ];
+    }
+
+// Ниже функция, которая убирает кнопку ВЬЮ
+    protected function activeActions(): ListOf
+    {
+        return parent::activeActions()->except(Action::VIEW);
     }
 
 }
