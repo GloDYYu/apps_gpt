@@ -30,6 +30,15 @@ class TypeWagonResource extends ModelResource implements HasImportExportContract
     protected ?string $alias = 'type-wagons';
     protected bool $columnSelection = true;
 
+    protected string $column = 'short_name';
+    protected bool $createInModal = true;
+
+    // Ниже функция, которая убирает кнопку ВЬЮ
+    protected function activeActions(): ListOf
+    {
+        return parent::activeActions()->except(Action::VIEW);
+    }
+
     /**
      * @return list<Page>
      */
@@ -62,6 +71,13 @@ class TypeWagonResource extends ModelResource implements HasImportExportContract
         ];
     }
 
+    protected function filters(): iterable
+    {
+        return [
+            Text::make('Сокр.назв', 'short_name'),
+        ];
+    }
+
     protected function exportFields(): iterable
     {
         return [
@@ -79,11 +95,4 @@ class TypeWagonResource extends ModelResource implements HasImportExportContract
             Text::make('Полное название', 'full_name'),
         ];
     }
-
-// Ниже функция, которая убирает кнопку ВЬЮ
-    protected function activeActions(): ListOf
-    {
-        return parent::activeActions()->except(Action::VIEW);
-    }
-
 }

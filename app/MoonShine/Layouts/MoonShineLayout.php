@@ -30,7 +30,8 @@ use MoonShine\UI\Components\{Breadcrumbs,
     Layout\ThemeSwitcher,
     Layout\TopBar,
     Layout\Wrapper,
-    When};
+    When
+};
 use App\MoonShine\Resources\TypeWagonResource;
 use MoonShine\MenuManager\{MenuItem, MenuDivider, MenuGroup};
 
@@ -41,7 +42,8 @@ final class MoonShineLayout extends CompactLayout
         return [
             ...parent::assets(),
 
-            InlineCss::make(<<<'Style'
+            InlineCss::make(
+                <<<'Style'
             :root {
               --radius: 0.15rem;
               --radius-sm: 0.075rem;
@@ -52,7 +54,8 @@ final class MoonShineLayout extends CompactLayout
               --radius-3xl: 1rem;
               --radius-full: 9999px;
             }
-        Style),
+        Style
+            ),
         ];
     }
 
@@ -79,13 +82,14 @@ final class MoonShineLayout extends CompactLayout
         parent::colors($colorManager);
 
         $colorManager
-        ->primary('#0079c2')
-        ->secondary('#1D8A99');
+            ->primary('#0079c2')
+            ->secondary('#1D8A99');
     }
+
     protected function getFooterMenu(): array
     {
         return [
-            'https://example.com' => 'ООО "Газпромтранс"',
+            'https://trans.gazprom.ru' => 'ООО "Газпромтранс"',
         ];
     }
 
@@ -101,6 +105,5 @@ final class MoonShineLayout extends CompactLayout
     public function build(): Layout
     {
         return parent::build();
-
     }
 }

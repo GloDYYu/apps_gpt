@@ -35,7 +35,6 @@ class MoonShineServiceProvider extends ServiceProvider
             ->prefixes('app', 'page', 'resource')
             ->homeRoute('moonshine.index')
             ->locale('ru');
-        //->domain();
 
         $core
             ->resources([
