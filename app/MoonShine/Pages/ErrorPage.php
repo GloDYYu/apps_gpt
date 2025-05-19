@@ -41,7 +41,7 @@ class ErrorPage extends Page
      */
     protected function components(): iterable
     {
-        $logo = moonshineAssets()->getAsset('vendor/moonshine/logo-small.svg');
+        $logo = moonshineAssets()->getAsset('vendor/moonshine/logo_gpt.svg');
 
         $backUrl = moonshineRouter()->getEndpoints()->home();
 

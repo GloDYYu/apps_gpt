@@ -25,11 +25,11 @@ class TypeWagonIndexPage extends IndexPage
     protected function fields(): iterable
     {
         return [
-            ID::make()->sortable(),
-            Text::make('Сокр.название','short_name')->sortable(),
-            Text::make('Полное название','full_name'),
-            Image::make('Изображение','image'),
-            ];
+            //ID::make(),
+            Text::make('Сокр.название', 'short_name')->sortable()->updateOnPreview(),
+            Text::make('Полное название', 'full_name')->updateOnPreview(),
+            Image::make('Изображение', 'image'),
+        ];
     }
 
     /**
@@ -39,7 +39,8 @@ class TypeWagonIndexPage extends IndexPage
     protected function topLayer(): array
     {
         return [
-            ...parent::topLayer()
+            ...parent::topLayer(),
+
         ];
     }
 
@@ -50,7 +51,7 @@ class TypeWagonIndexPage extends IndexPage
     protected function mainLayer(): array
     {
         return [
-            ...parent::mainLayer()
+            ...parent::mainLayer(),
         ];
     }
 
@@ -61,7 +62,7 @@ class TypeWagonIndexPage extends IndexPage
     protected function bottomLayer(): array
     {
         return [
-            ...parent::bottomLayer()
+            ...parent::bottomLayer(),
         ];
     }
 }

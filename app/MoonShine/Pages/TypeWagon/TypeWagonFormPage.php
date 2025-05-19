@@ -10,6 +10,7 @@ use MoonShine\Laravel\Pages\Crud\FormPage;
 use MoonShine\Contracts\UI\ComponentContract;
 use MoonShine\Contracts\UI\FieldContract;
 use MoonShine\Laravel\Resources\ModelResource;
+use MoonShine\Support\DTOs\FileItemExtra;
 use MoonShine\Support\Enums\Color;
 use MoonShine\UI\Fields\ID;
 use MoonShine\UI\Fields\Text;
@@ -34,20 +35,25 @@ class TypeWagonFormPage extends FormPage
             Grid::make([
                 Column::make(
                     [
-                        Text::make('Сокр.название','short_name'),
+                        Text::make('Сокр.название', 'short_name')->required(),
                     ],
                     colSpan: 4,
                     adaptiveColSpan: 6
                 ),
                 Column::make(
                     [
-                        Text::make('Полное название','full_name'),
+                        Text::make('Полное название', 'full_name'),
                     ],
                     colSpan: 8,
                     adaptiveColSpan: 6
                 ),
             ]),
-            Image::make('Изображение','image'),
+            Image::make('Изображение', 'image')
+                ->dir('img')
+                ->hint('Допускается только загрузка файлов с расширением: jpg, png, jpeg, gif')
+//                ->multiple()
+                ->removable()
+                ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif']),
         ];
     }
 

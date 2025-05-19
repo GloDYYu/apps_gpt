@@ -90,7 +90,7 @@ final class MoonShineLayout extends CompactLayout
     protected function getFooterMenu(): array
     {
         return [
-            'https://example.com' => 'ООО "Газпромтранс"',
+            'https://trans.gazprom.ru' => 'ООО "Газпромтранс"',
         ];
     }
 

@@ -16,8 +16,8 @@ use App\MoonShine\Resources\TypeWagonResource;
 class MoonShineServiceProvider extends ServiceProvider
 {
     /**
-     * @param  MoonShine  $core
-     * @param  MoonShineConfigurator  $config
+     * @param MoonShine $core
+     * @param MoonShineConfigurator $config
      *
      */
     public function boot(CoreContract $core, ConfiguratorContract $config): void
@@ -32,7 +32,7 @@ class MoonShineServiceProvider extends ServiceProvider
             ->useDatabaseNotifications()
             ->useProfile()
             ->dir('app/MoonShine', 'App\MoonShine')
-            ->prefixes('admin', 'page', 'resource')
+            ->prefixes('app', 'page', 'resource')
             ->homeRoute('moonshine.index')
             ->locale('ru');
 
@@ -44,7 +44,6 @@ class MoonShineServiceProvider extends ServiceProvider
             ])
             ->pages([
                 ...$config->getPages(),
-            ])
-        ;
+            ]);
     }
 }
