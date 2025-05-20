@@ -18,7 +18,6 @@ final class MoonShineLayout extends CompactLayout
     {
         return [
             ...parent::assets(),
-
             InlineCss::make(
                 <<<'Style'
             :root {
@@ -39,15 +38,12 @@ final class MoonShineLayout extends CompactLayout
     protected function menu(): array
     {
         return [
-
             MenuGroup::make('Справочники', [
                 MenuItem::make('Типы вагонов', TypeWagonResource::class, 'squares-2x2'),
                 MenuItem::make('Неисправности', 'test1', 'squares-2x2'),
                 MenuItem::make('Модели вагонов', 'test2', 'squares-2x2')
             ], 's.arrow-top-right-on-square'),
             MenuDivider::make(),
-
-
             ...parent::menu(),
         ];
     }
