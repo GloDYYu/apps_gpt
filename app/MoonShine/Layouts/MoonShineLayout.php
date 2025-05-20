@@ -4,36 +4,13 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Layouts;
 
-use MoonShine\Laravel\Layouts\CompactLayout;
-use MoonShine\ColorManager\ColorManager;
-use MoonShine\AssetManager\InlineCss;
-use MoonShine\Contracts\ColorManager\ColorManagerContract;
-use MoonShine\Laravel\Components\Layout\{Locales, Notifications, Profile, Search};
-use MoonShine\UI\Components\{Breadcrumbs,
-    Components,
-    Layout\Flash,
-    Layout\Div,
-    Layout\Body,
-    Layout\Burger,
-    Layout\Content,
-    Layout\Footer,
-    Layout\Head,
-    Layout\Favicon,
-    Layout\Assets,
-    Layout\Meta,
-    Layout\Header,
-    Layout\Html,
-    Layout\Layout,
-    Layout\Logo,
-    Layout\Menu,
-    Layout\Sidebar,
-    Layout\ThemeSwitcher,
-    Layout\TopBar,
-    Layout\Wrapper,
-    When
-};
 use App\MoonShine\Resources\TypeWagonResource;
-use MoonShine\MenuManager\{MenuItem, MenuDivider, MenuGroup};
+use MoonShine\AssetManager\InlineCss;
+use MoonShine\ColorManager\ColorManager;
+use MoonShine\Contracts\ColorManager\ColorManagerContract;
+use MoonShine\Laravel\Layouts\CompactLayout;
+use MoonShine\MenuManager\{MenuDivider, MenuGroup, MenuItem};
+use MoonShine\UI\Components\{Layout\Layout};
 
 final class MoonShineLayout extends CompactLayout
 {
@@ -68,8 +45,8 @@ final class MoonShineLayout extends CompactLayout
                 MenuItem::make('Неисправности', 'test1', 'squares-2x2'),
                 MenuItem::make('Модели вагонов', 'test2', 'squares-2x2')
             ], 's.arrow-top-right-on-square'),
-            //MenuDivider::make(),
-            MenuDivider::make('Новый раздел меню'),
+            MenuDivider::make(),
+
 
             ...parent::menu(),
         ];
